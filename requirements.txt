@@ -1,0 +1,26 @@
+The required dependencies for running the provided Jupyter notebook (munet1.ipynb) for UMobileNetV2 brain tumor segmentation are listed below, based on all imported libraries and standard environment needs for TensorFlow-based medical image segmentation with data augmentation, plotting, and image I/O.
+
+## requirements.txt
+
+```txt
+tensorflow==2.13.0
+keras==2.13.1
+numpy>=1.21.0
+opencv-python>=4.5.5
+scikit-learn>=1.0.2
+matplotlib>=3.4.3
+pickle5>=0.0.11
+```
+
+### Notes
+
+- Versions are compatible with current TensorFlow 2.x and Keras.
+- "pickle5" is included for potential compatibility with older Python versions if needed.
+- "glob" and "os" are Python standard libraries and do not require separate installation.[1]
+- If using a Jupyter environment:
+  ```
+  jupyterlab>=3.0.0
+  ```
+- For environments without GPU, no extra requirements; for GPU support, additional CUDA/cuDNN specifics may be required.
+
+This configuration enables loading/preprocessing MRI images, model building/training with MobileNetV2, plotting results, and saving/loading models and outputs.
